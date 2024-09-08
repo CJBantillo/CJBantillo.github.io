@@ -1,0 +1,52 @@
+#profile {
+    width: 75%;
+    height: 75%;
+    object-fit: cover;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 50%;
+    animation: borderAnimation 5s infinite ease-in-out, waveEffect 3s infinite linear;
+    position: relative; /* To allow positioning of the pseudo-elements */
+}
+
+@keyframes borderAnimation {
+    0% {
+        border-color: #198754;
+    }
+    33% {
+        border-color: white;
+    }
+    66% {
+        border-color: grey;
+    }
+    100% {
+        border-color: #198754;
+    }
+}
+
+@keyframes waveEffect {
+    0% {
+        box-shadow: 0 0 15px #198754, 0 0 30px #198754, 0 0 45px #198754;
+    }
+    25% {
+        box-shadow: 10px 10px 15px #198754, 20px 20px 30px #198754, 30px 30px 45px #198754;
+    }
+    50% {
+        box-shadow: 0 0 15px grey, 0 0 30px grey, 0 0 45px grey;
+    }
+    75% {
+        box-shadow: -10px -10px 15px grey, -20px -20px 30px grey, -30px -30px 45px grey;
+    }
+    100% {
+        box-shadow: 0 0 15px white, 0 0 30px white, 0 0 45px white;
+    }
+}
+
+.cardCustom{
+    width: 18rem;
+}
+
+.imgcard{
+    height: 200px;
+    object-fit: cover;
+}
